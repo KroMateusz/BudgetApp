@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetApp</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+</head>
+
+<body>
+    <script src="./js/index.js"></script>
+</body>
+<header class="header">
+    <h1 class="header__heading">
+        BudgetApp
+    </h1>
+</header>
+<main class="budget">
+    <section class="budget__form">
+        <ul class="inputs">
+            <li class="switch">
+                <input type="checkbox" name="switch" id="switch" class="switch__input">
+                <label for="switch" class="switch__label"></label>
+            </li>
+            <li class="input"><input type="text" name="description" id="description" class="input__input"
+                    placeholder="Description"><label for="description" class="input__label">Description</label></li>
+            <li class="input"><input type="number" name="value" id="value" class="input__input"
+                    placeholder="Value"><label for="value" class="input__label">Value</label></li>
+            <li class="inputs__button"><button class="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 0 24 24" width="24px" fill="#000000">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    </svg></button></li>
+        </ul>
+    </section>
+    <section class="budget__balance">
+        <h2 class="balance__heading">Your budget is 100zł</h2>
+        <article class="balance__list">
+            <section class="list">
+                <h3 class="list__heading">Incomes</h3>
+                <ul class="list__list">
+                    <li class="class__item">
+                        <p class="item__description">Wypłata</p>
+                        <p class="item__value">2000 zł</p>
+                        <div class="item__buttons">
+                            <button class="item__button">Edit</button>
+                            <button class="item__button">Delete</button>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+            <section class="list">
+                <h3 class="list__heading">Expenses</h3>
+                <ul class="list__list">
+                    <li class="class__item">
+                        <p class="item__description">Podatki</p>
+                        <p class="item__value">1900 zł</p>
+                        <div class="item__buttons">
+                            <button class="item__button">Edit</button>
+                            <button class="item__button">Delete</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </article>
+    </section>
+</main>
+
+</html>
