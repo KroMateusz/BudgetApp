@@ -125,7 +125,7 @@ body {
     transform: rotate(90deg)
 }
 
-input {
+.input {
     display: block;
     position: relative;
     padding-right: 2rem;
@@ -140,7 +140,32 @@ input {
     border: none;
     width: 15rem;
     display: block;
-    border-bottom: .3rem solid;
+    transition: border-color .3s ease-in;
+    border-bottom: 0.3rem solid var(--grey-color);
+}
+
+.input__input:focus {
+    outline: none;
+    border-bottom: .3rem solid var(--income-color);
+}
+
+.input__input::-webkit-input-placeholder {
+    color: #000;
+}
+
+.input__label {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    transition: opacity .3s ease-in transform .3s ease-in;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.input__input:placeholder-shown+.input__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4rem);
 }
 
 @media(min-width: 768px) {
